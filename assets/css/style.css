@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
 :root {
-  --primary-color: rgb(17, 86, 102);
+  --primary-color: rgb(44, 62, 80);
   --primary-color-darker: rgb(9, 48, 56);
 }
 
@@ -31,29 +31,184 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
 }
-
-.logo img {
-  height: 11vh;
-  width: 13vh;
+.menu h1 {
+  color: #e64940;
 }
-
-nav {
+.menu .logo {
   display: block;
 }
-nav .menu-mobile {
-  display: none;
-  line-height: 46px;
-  height: 45px;
-  cursor: pointer;
+.menu .logo img {
+  height: 50px;
+  width: 50px;
+}
+.menu nav .menu-computador ul {
+  display: flex;
+  list-style: none;
+}
+.menu nav .menu-computador ul a {
+  text-decoration: none;
+  color: #e64940;
+  margin: 0 4px;
+  position: relative;
+  font-size: 0.85rem;
+}
+.menu nav .menu-computador ul a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #ff0000;
+  transition: width 0.3s ease;
+}
+.menu nav .menu-computador ul a:hover {
+  color: #ff0000;
+}
+.menu nav .menu-computador ul a:hover::after {
+  width: 100%;
 }
 
-.container {
+.tarefas {
+  list-style-type: space-counter;
+  font-size: 3.5vh;
+}
+
+.container, .initial {
   max-width: 640px;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .title, .initial .title {
+  color: #e64940;
+}
+.container .title h1, .initial .title h1 {
+  font-size: 3.5vh;
+}
+.container .imagem-container, .initial .imagem-container {
+  width: 200px;
+  height: 200px;
+}
+.container .contents, .initial .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.initial {
+  justify-content: center;
+  font-weight: 500;
+  font-size: 3.3vw;
+  padding: 30px;
+}
+
+.input {
+  margin-top: 3px;
+  padding: 8px;
+  display: flex;
+}
+
+.btn-tarefa {
+  border: none;
+  background-color: #fff;
+}
+.btn-tarefa img {
+  margin-top: 2px;
+  width: 33px;
+}
+
+.lista {
+  display: flex;
+}
+
+.apagar, .checar {
+  border: none;
+  background-color: white;
+}
+
+.apagar i {
+  font-size: 1.3em;
+  margin-bottom: -3px;
+  color: #ff0000;
+}
+
+.checar i {
+  font-size: 1.3em;
+  margin-bottom: -3px;
+}
+
+li[data-color=green] {
+  color: green;
+}
+li[data-color=green] .checar i {
+  color: green;
+}
+
+button.quantidade {
+  border: none;
+  outline: none;
+  background-color: #75baff;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+button.quantidade:hover {
+  background-color: #4fa4ff;
+}
+
+button.quantidade span {
+  font-size: 12px;
+  color: #ffffff;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #4fa4ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.quantidade span.incremento {
+  margin-right: 2px;
+}
+
+button.quantidade span.decremento {
+  margin-left: 2px;
+}
+
+input.numero {
+  width: 50px;
+  height: 24px;
+  padding: 4px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  color: #202030;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 form input,
