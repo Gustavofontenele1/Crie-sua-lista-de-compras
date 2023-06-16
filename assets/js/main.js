@@ -18,6 +18,7 @@ function limpaInput() {
   inputTarefa.value = "";
   inputTarefa.focus();
 }
+
 function criaBotao(li) {
   const textoTarefa = li.firstChild.textContent;
 
@@ -49,6 +50,7 @@ function criaBotao(li) {
   botaoIncremento.setAttribute("class", "incremento");
   botaoIncremento.addEventListener("click", function () {
     inputNumber.stepUp();
+    salvarTarefas();
   });
 
   const botaoDecremento = document.createElement("span");
@@ -57,6 +59,7 @@ function criaBotao(li) {
   botaoDecremento.addEventListener("click", function () {
     if (inputNumber.value > 0) {
       inputNumber.stepDown();
+      salvarTarefas();
     }
   });
 
@@ -86,26 +89,32 @@ function criaBotao(li) {
   botaoChecar.addEventListener("click", function () {
     const novaCor = li.getAttribute("data-color") ? "" : "green";
     li.style.color = novaCor;
-    novaCor === "green"
-      ? li.setAttribute("data-color", "green")
-      : li.removeAttribute("data-color");
+    li.setAttribute("data-color", novaCor);
     imagemChecar.style.color = novaCor;
+    salvarTarefas();
+  });
+
+  inputNumber.addEventListener("input", function () {
     salvarTarefas();
   });
 }
 
-function criaTarefa(textoInput) {
+function criaTarefa(textoInput, corInput, inputValue) {
   const li = criaLi();
   li.innerText = textoInput;
   tarefas.appendChild(li);
   limpaInput();
   criaBotao(li);
+
+  li.setAttribute("data-color", corInput);
+  li.querySelector(".numero").value = inputValue;
+
   salvarTarefas();
 }
 
 btnTarefa.addEventListener("click", (e) => {
   if (!inputTarefa.value) return;
-  criaTarefa(inputTarefa.value);
+  criaTarefa(inputTarefa.value, "", 0);
 });
 
 document.addEventListener("click", (e) => {
@@ -123,9 +132,11 @@ function salvarTarefas() {
     let tarefaTexto = tarefa.innerText;
     tarefaTexto = tarefaTexto.replace("Apagar", "").trim();
     const tarefaCor = tarefa.getAttribute("data-color");
+    const tarefaInputValue = tarefa.querySelector(".numero").value;
     const tarefaObjeto = {
       texto: tarefaTexto,
       cor: tarefaCor,
+      inputValue: tarefaInputValue,
     };
     listaDeTarefas.push(tarefaObjeto);
   }
@@ -141,9 +152,11 @@ function adicionaTarefasSalvas() {
       for (let tarefaObjeto of listaDeTarefas) {
         const tarefaTexto = tarefaObjeto.texto;
         const tarefaCor = tarefaObjeto.cor;
-        criaTarefa(tarefaTexto, tarefaCor);
+        const tarefaInputValue = tarefaObjeto.inputValue;
+        criaTarefa(tarefaTexto, tarefaCor, tarefaInputValue);
       }
     }
   }
 }
+
 adicionaTarefasSalvas();
