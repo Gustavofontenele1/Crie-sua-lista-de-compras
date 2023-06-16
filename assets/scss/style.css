@@ -184,8 +184,6 @@ input.numero {
   color: #202030;
   border-radius: 20px;
   text-align: center;
-  -webkit-appearance: none;
-  -moz-appearance: textfield;
 }
 
 input[type=number]::-webkit-inner-spin-button {
