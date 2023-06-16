@@ -48,7 +48,8 @@
     text-align: center;
   }
   .tarefas {
-    padding-left: 0;
+    padding-left: 3px;
     list-style-type: space-counter;
+    font-size: 2.5vh;
   }
 }/*# sourceMappingURL=responsivo.css.map */
