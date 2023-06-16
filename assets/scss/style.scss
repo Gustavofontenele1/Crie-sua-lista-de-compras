@@ -143,6 +143,14 @@ header {
   font-size: 1.3em;
   margin-bottom: -3px;
 }
+
+li[data-color="green"] {
+  color: green;
+  .checar i {
+    color: green;
+  }
+}
+
 button.quantidade {
   border: none;
   outline: none;

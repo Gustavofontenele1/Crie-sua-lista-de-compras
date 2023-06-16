@@ -137,6 +137,13 @@ header {
   margin-bottom: -3px;
 }
 
+li[data-color=green] {
+  color: green;
+}
+li[data-color=green] .checar i {
+  color: green;
+}
+
 button.quantidade {
   border: none;
   outline: none;

@@ -19,7 +19,7 @@ function limpaInput() {
   inputTarefa.focus();
 }
 
-function criaBotao(li) {
+function criaBotao(li, inputValue) {
   const textoTarefa = li.firstChild.textContent;
 
   const botaoApagar = document.createElement("button");
@@ -33,7 +33,7 @@ function criaBotao(li) {
   const inputNumber = document.createElement("input");
   inputNumber.setAttribute("type", "number");
   inputNumber.setAttribute("class", "numero");
-  inputNumber.value = 0; // Define o valor inicial como 0
+  inputNumber.value = inputValue; // Define o valor inicial como 0
   inputNumber.min = 0; // Define o valor mínimo como 0
 
   inputNumber.addEventListener("keydown", function (event) {
@@ -88,9 +88,7 @@ function criaBotao(li) {
 
   botaoChecar.addEventListener("click", function () {
     const novaCor = li.getAttribute("data-color") ? "" : "green";
-    li.style.color = novaCor;
     li.setAttribute("data-color", novaCor);
-    imagemChecar.style.color = novaCor;
     salvarTarefas();
   });
 
@@ -104,7 +102,7 @@ function criaTarefa(textoInput, corInput, inputValue) {
   li.innerText = textoInput;
   tarefas.appendChild(li);
   limpaInput();
-  criaBotao(li);
+  criaBotao(li, inputValue);
 
   li.setAttribute("data-color", corInput);
   li.querySelector(".numero").value = inputValue;
@@ -115,6 +113,7 @@ function criaTarefa(textoInput, corInput, inputValue) {
 btnTarefa.addEventListener("click", (e) => {
   if (!inputTarefa.value) return;
   criaTarefa(inputTarefa.value, "", 0);
+  criaBotao(tarefas.lastChild, 0); // Chama a função criaBotao para o novo li
 });
 
 document.addEventListener("click", (e) => {
