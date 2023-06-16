@@ -33,8 +33,9 @@ function criaBotao(li, inputValue) {
   const inputNumber = document.createElement("input");
   inputNumber.setAttribute("type", "number");
   inputNumber.setAttribute("class", "numero");
-  inputNumber.value = inputValue; // Define o valor inicial como 0
+  inputNumber.value = (inputValue !== undefined && inputValue !== null) ? inputValue : 0; // Define o valor inicial como 0 se o inputValue for indefinido ou nulo
   inputNumber.min = 0; // Define o valor mínimo como 0
+  
 
   inputNumber.addEventListener("keydown", function (event) {
     if (event.key === "ArrowUp" || event.key === "ArrowDown") {
