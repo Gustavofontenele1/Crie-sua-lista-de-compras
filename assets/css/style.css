@@ -74,7 +74,7 @@ header {
 
 .tarefas {
   list-style-type: space-counter;
-  font-size: 3.5vh;
+  font-size: 2rem;
 }
 
 .container, .initial {
