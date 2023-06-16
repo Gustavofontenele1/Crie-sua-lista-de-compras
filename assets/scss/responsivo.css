@@ -9,7 +9,46 @@
   }
 }
 @media screen and (max-width: 425px) {
-  .container, .initial {
+  .container,
+  .initial {
     max-width: 320px;
+  }
+}
+@media (max-width: 480px) {
+  .apagar i,
+  .checar i {
+    font-size: 2vh;
+  }
+  button.quantidade {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #4fa4ff;
+  }
+  button.quantidade:hover {
+    background-color: #75baff;
+  }
+  button.quantidade span {
+    font-size: 10px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+  }
+  button.quantidade span.incremento {
+    margin-right: 2px;
+  }
+  button.quantidade span.decremento {
+    margin-left: 2px;
+  }
+  input.numero {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 3px;
+    color: #202030;
+    text-align: center;
+  }
+  .tarefas {
+    padding-left: 0;
+    list-style-type: space-counter;
   }
 }/*# sourceMappingURL=responsivo.css.map */
