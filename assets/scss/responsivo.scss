@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .imagem-container {
+        width: 130px;
+        height: 130px;
+  
+      }
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .container, .initial {
+      max-width: 320px;
+    }
+  }
