@@ -111,7 +111,9 @@ function criaBotao(li, inputValue) {
   });
 }
 
+
 function criaTarefa(textoInput, corInput = "", inputValue = 1) {
+
   const li = criaLi();
   li.innerText = textoInput;
   tarefas.appendChild(li);
