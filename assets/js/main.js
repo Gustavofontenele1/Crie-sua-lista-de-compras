@@ -90,7 +90,7 @@ function criaBotao(li, inputValue) {
   });
 
   botaoChecar.addEventListener("click", function () {
-    const novaCor = li.getAttribute("data-color", "green");
+    const novaCor = li.getAttribute("data-color") ? "" : "green";
     li.setAttribute("data-color", novaCor);
     salvarTarefas();
   });
