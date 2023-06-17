@@ -24,11 +24,13 @@ export function limpaInput() {
   inputTarefa.focus();
 }
 
-btnTarefa.addEventListener("click", (e) => {
+btnTarefa.addEventListener("click", () => {
   if (!inputTarefa.value) return;
-  criaTarefa(inputTarefa.value, "", 1);
-  criaBotao(tarefas.lastChild, 0); // Chama a função criaBotao para o novo li
+  criaTarefa(inputTarefa.value);
+  limpaInput();
 });
+
+
 
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("apagar")) {
