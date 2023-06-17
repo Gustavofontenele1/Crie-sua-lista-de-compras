@@ -90,7 +90,7 @@ function criaBotao(li, inputValue) {
   });
 
   botaoChecar.addEventListener("click", function () {
-    const novaCor = li.getAttribute("data-color") ? "" : "green";
+    const novaCor = li.getAttribute("data-color", "green");
     li.setAttribute("data-color", novaCor);
     salvarTarefas();
   });
@@ -100,7 +100,7 @@ function criaBotao(li, inputValue) {
   });
 }
 
-function criaTarefa(textoInput, corInput, inputValue = 0) {
+function criaTarefa(textoInput, corInput = "", inputValue = 0) {
   const li = criaLi();
   li.innerText = textoInput;
   tarefas.appendChild(li);
