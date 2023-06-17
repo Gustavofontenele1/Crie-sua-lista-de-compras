@@ -9,6 +9,18 @@
   }
 }
 
+@media (max-width: 660px) {
+  .container,
+  .initial {
+    margin: 50px 5px;
+    .title {
+      h1 {
+        font-size: 4vh;
+      }
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .apagar i,
   .checar i {
@@ -16,8 +28,8 @@
   }
   button.quantidade {
     padding: 3px;
-    border-radius: 5px;
-    background-color: #4fa4ff;
+    border-radius: 15px;
+    background-color: #d9eeff;
   }
 
   button.quantidade:hover {
@@ -33,17 +45,19 @@
 
   button.quantidade span.incremento {
     margin-right: 2px;
+    line-height: 12px;
   }
 
   button.quantidade span.decremento {
     margin-left: 2px;
+    line-height: 10px;
   }
 
   input.numero {
     width: 20px;
     height: 20px;
     padding: 2px;
-    border-radius: 3px;
+    border-radius: 15px;
     color: #202030;
     text-align: center;
   }
@@ -52,8 +66,15 @@
     list-style-type: space-counter;
     font-size: 2.5vh;
   }
-  
+
   .estilo-div {
     width: 150px;
+  }
+  .title {
+    font-size: 4vh;
+  }
+
+  ::-webkit-scrollbar {
+    height: 6px;
   }
 }

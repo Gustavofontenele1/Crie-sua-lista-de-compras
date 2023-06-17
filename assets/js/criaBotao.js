@@ -37,7 +37,7 @@ export function criaBotao(li, inputValue) {
     botaoQuantidade.setAttribute("class", "quantidade");
   
     const botaoIncremento = document.createElement("span");
-    botaoIncremento.innerText = "+";
+    botaoIncremento.innerText = '+';
     botaoIncremento.setAttribute("class", "incremento");
     botaoIncremento.addEventListener("click", function () {
       inputNumber.stepUp();
@@ -45,7 +45,7 @@ export function criaBotao(li, inputValue) {
     });
   
     const botaoDecremento = document.createElement("span");
-    botaoDecremento.innerText = "-";
+    botaoDecremento.innerText = '-';
     botaoDecremento.setAttribute("class", "decremento");
     botaoDecremento.addEventListener("click", function () {
       if (inputNumber.value > 0) {
