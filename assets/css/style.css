@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  width: 100vw;
+  width: auto;
   height: 75px;
   background: #fff;
   display: flex;
@@ -75,6 +75,7 @@ header {
 .tarefas {
   list-style-type: space-counter;
   font-size: 3vh;
+  padding: 8px;
 }
 
 .container, .initial {
@@ -153,6 +154,7 @@ li[data-color=green] .checar i {
 }
 
 button.quantidade {
+  height: min-content;
   border: none;
   outline: none;
   background-color: #75baff;
@@ -243,3 +245,27 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }/*# sourceMappingURL=style.css.map */
+
+li {
+  margin: 5px 0;
+}
+
+.estilo-div {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.estilo-span {
+  display: flex;
+  width: max-content;
+  overflow: hidden;
+  align-items: center;
+}
+
+.estilo-div-geral {
+  display: flex;
+  align-items: center;
+}

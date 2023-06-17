@@ -22,8 +22,16 @@ function limpaInput() {
 function criaBotao(li, inputValue) {
   const textoTarefa = li.firstChild.textContent;
 
+  const divGeral = document.createElement("div")
+  divGeral.setAttribute("class", "estilo-div-geral")
+
   const spanTexto = document.createElement("span");
+  spanTexto.setAttribute("class", "estilo-span")
   spanTexto.innerText = textoTarefa;
+
+  const divTexto = document.createElement("div")
+  divTexto.setAttribute("class", "estilo-div")
+  divTexto.appendChild(spanTexto)
 
   const botaoApagar = document.createElement("button");
   botaoApagar.setAttribute("class", "apagar");
@@ -79,10 +87,13 @@ function criaBotao(li, inputValue) {
   botaoApagar.appendChild(imagemApagar);
 
   li.textContent = "";
-  li.appendChild(spanTexto);
-  li.appendChild(botaoChecar);
-  li.appendChild(botaoQuantidade);
-  li.appendChild(botaoApagar);
+
+  divGeral.appendChild(divTexto);
+  divGeral.appendChild(botaoChecar);
+  divGeral.appendChild(botaoQuantidade);
+  divGeral.appendChild(botaoApagar);
+
+  li.appendChild(divGeral)
 
   botaoApagar.addEventListener("click", function () {
     li.remove();
@@ -100,7 +111,9 @@ function criaBotao(li, inputValue) {
   });
 }
 
-function criaTarefa(textoInput, corInput = "", inputValue = 0) {
+
+function criaTarefa(textoInput, corInput = "", inputValue = 1) {
+
   const li = criaLi();
   li.innerText = textoInput;
   tarefas.appendChild(li);
@@ -115,7 +128,7 @@ function criaTarefa(textoInput, corInput = "", inputValue = 0) {
 
 btnTarefa.addEventListener("click", (e) => {
   if (!inputTarefa.value) return;
-  criaTarefa(inputTarefa.value, "", 0);
+  criaTarefa(inputTarefa.value, "", 1);
   criaBotao(tarefas.lastChild, 0); // Chama a função criaBotao para o novo li
 });
 
