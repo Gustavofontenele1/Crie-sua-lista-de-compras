@@ -22,6 +22,9 @@ function limpaInput() {
 function criaBotao(li, inputValue) {
   const textoTarefa = li.firstChild.textContent;
 
+  const spanTexto = document.createElement("span");
+  spanTexto.innerText = textoTarefa;
+
   const botaoApagar = document.createElement("button");
   botaoApagar.setAttribute("class", "apagar");
   botaoApagar.setAttribute("title", "apagar esta tarefa");
@@ -35,7 +38,6 @@ function criaBotao(li, inputValue) {
   inputNumber.setAttribute("class", "numero");
   inputNumber.value = (inputValue !== undefined && inputValue !== null) ? inputValue : 0; // Define o valor inicial como 0 se o inputValue for indefinido ou nulo
   inputNumber.min = 0; // Define o valor mínimo como 0
-  
 
   inputNumber.addEventListener("keydown", function (event) {
     if (event.key === "ArrowUp" || event.key === "ArrowDown") {
@@ -77,7 +79,7 @@ function criaBotao(li, inputValue) {
   botaoApagar.appendChild(imagemApagar);
 
   li.textContent = "";
-  li.appendChild(document.createTextNode(textoTarefa));
+  li.appendChild(spanTexto);
   li.appendChild(botaoChecar);
   li.appendChild(botaoQuantidade);
   li.appendChild(botaoApagar);
