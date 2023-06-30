@@ -9,10 +9,12 @@ export function salvarTarefas() {
     tarefaTexto = tarefaTexto.replace("Apagar", "").trim();
     const tarefaCor = tarefa.getAttribute("data-color");
     const tarefaInputValue = tarefa.querySelector(".numero").value;
+    const tarefaValorProduto = tarefa.querySelector(".valor-produto").value;
     const tarefaObjeto = {
       texto: tarefaTexto,
       cor: tarefaCor,
       inputValue: tarefaInputValue,
+      valorProduto: tarefaValorProduto,
     };
     listaDeTarefas.push(tarefaObjeto);
   }
@@ -29,7 +31,8 @@ export function adicionaTarefasSalvas() {
         const tarefaTexto = tarefaObjeto.texto;
         const tarefaCor = tarefaObjeto.cor;
         const tarefaInputValue = tarefaObjeto.inputValue;
-        criaTarefa(tarefaTexto, tarefaCor, tarefaInputValue);
+        const tarefaValorProduto = tarefaObjeto.valorProduto;
+        criaTarefa(tarefaTexto, tarefaCor, tarefaInputValue, tarefaValorProduto);
       }
     }
   }

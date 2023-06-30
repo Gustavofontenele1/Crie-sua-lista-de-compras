@@ -106,7 +106,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-items: flex-start;
 }
 
 .initial {
@@ -149,6 +148,8 @@ header {
 .checar {
   border: none;
   background-color: white;
+  padding-left: 0px;
+  margin-left: 4px;
 }
 
 .apagar i {
@@ -169,6 +170,27 @@ li[data-color=green] .checar i {
   color: green;
 }
 
+p#total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #f05945;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+#total:hover {
+  background-color: #d43f2a;
+}
+
 button.quantidade {
   height: -moz-min-content;
   height: min-content;
@@ -181,6 +203,7 @@ button.quantidade {
   transition: 0.3s ease;
   display: inline-flex;
   align-items: center;
+  margin-right: 3px;
 }
 
 button.quantidade:hover {
@@ -262,6 +285,33 @@ form button {
 
 form button:hover {
   background: var(--primary-color-darker);
+}
+
+.valor-produto {
+  width: 42px;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+  margin: 3px;
+  display: flex;
+  text-align: center;
+}
+
+.valor-produto:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+}
+
+.valor-produto::-moz-placeholder {
+  color: #999;
+}
+
+.valor-produto::placeholder {
+  color: #999;
 }
 
 li {
