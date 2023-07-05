@@ -1,7 +1,7 @@
 # Lista de Tarefas ✏️
 
 <div align="center">
-  <img src="https://github.com/seu-usuario/nome-do-repositorio/blob/main/assets/logo.png" alt="Logo do Projeto" width="200" height="200">
+  <img src="https://gustavofontenele1.github.io/Crie-sua-lista-de-compras/blob/main/assets/logo.png" alt="Logo do Projeto" width="200" height="200">
 </div>
 
 <p align="center">Um projeto de uma lista de tarefas interativa!</p>
@@ -31,7 +31,7 @@ Este é um projeto simples de uma lista de tarefas onde os usuários podem adici
 ## 🛠️ Como Executar
 
 <a href="https://gustavofontenele1.github.io/Crie-sua-lista-de-compras/" target="_blank" rel="noopener noreferrer">
-  <img src="../assets/img/icons8-mercado.gif" alt="Link para o GitHub Pages" class="animated-link">
+  <img src="assets/img/icons8-mercado.gif" alt="Link para o GitHub Pages" class="animated-link">
 </a>
 
 ## 🤝 Contribuição
