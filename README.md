@@ -1,6 +1,6 @@
 # Lista de Compras ✏️
 
-<h2 align="center" style="font-size: 24px; padding: 10px;">Um projeto animado de uma lista de tarefas interativa!</h2>
+<h2 align="center" style="font-size: 24px; padding: 10px;">Um projeto animado de uma lista de compras interativa!</h2>
 
 
 <div align="center">
