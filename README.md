@@ -9,14 +9,14 @@
 
 ## ℹ️ Sobre o Projeto
 
-Este é um projeto simples de uma lista de compras onde os usuários podem adicionar, editar e remover tarefas. Além disso, é possível atribuir uma quantidade e um valor a cada tarefa, e o sistema calculará o total dos produtos.
+Este é um projeto simples de uma lista de compras onde os usuários podem adicionar, editar e remover item. Além disso, é possível atribuir uma quantidade e um valor a cada item, e o sistema calculará o total dos produtos.
 
 ## ⚙️ Funcionalidades
 
-- Adicionar tarefas: Digite o texto da tarefa no campo de entrada e clique no botão "carrinho de compras" para adicionar uma nova tarefa.
-- Concluir tarefas: Clique no círculo à esquerda de uma tarefa para marcá-la como concluída.
-- Remover tarefas: Clique no ícone da lixeira ao lado de uma tarefa para removê-la da lista.
-- Animado: O projeto conta com animações suaves e interações agradáveis para deixar a lista de tarefas mais divertida.
+- Adicionar item: Digite o texto do item no campo de entrada e clique no botão "carrinho de compras" para adicionar um novo item.
+- Concluir item: Clique no círculo à esquerda de um item para marcá-lo como concluído.
+- Remover item: Clique no ícone da lixeira ao lado de um item para removê-la da lista.
+- Animado: O projeto conta com animações suaves e interações agradáveis para deixar a lista de compras mais divertida.
 
 ## 🚀 Tecnologias Utilizadas
 
