@@ -1,9 +1,5 @@
 # Lista de Tarefas ✏️
 
-<div align="center">
-  <img src="https://gustavofontenele1.github.io/Crie-sua-lista-de-compras/main/assets/img/logo.png" alt="Logo do Projeto" width="200" height="200">
-</div>
-
 <p align="center">Um projeto de uma lista de tarefas interativa!</p>
 
 <div align="center">
