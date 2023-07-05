@@ -30,8 +30,8 @@ Este é um projeto simples de uma lista de tarefas onde os usuários podem adici
 
 ## 🛠️ Como Executar
 
-<a href="https://seu-usuario.github.io/nome-do-repositorio" target="_blank" rel="noopener noreferrer">
-  <img src="assets/img/icons8-mercado.gif" alt="Link para o GitHub Pages" class="animated-link">
+<a href="https://gustavofontenele1.github.io/Crie-sua-lista-de-compras/" target="_blank" rel="noopener noreferrer">
+  <img src="../assets/img/icons8-mercado.gif" alt="Link para o GitHub Pages" class="animated-link">
 </a>
 
 ## 🤝 Contribuição
