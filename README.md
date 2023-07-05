@@ -30,7 +30,7 @@ Este é um projeto simples de uma lista de tarefas onde os usuários podem adici
 
 ## 🛠️ Como Executar
 
-<img src="assets/img/icons8-mercado.gif" style="backgroundColor:none;" alt="Link para o GitHub Pages" class="animated-link">
+<img src="assets/img/icons8-mercado.gif" style="background: transparent;" alt="Link para o GitHub Pages" class="animated-link">
 <a href="https://gustavofontenele1.github.io/Crie-sua-lista-de-compras/" target="_blank" rel="noopener noreferrer">
   <p>Clique aqui</p>
 </a>
