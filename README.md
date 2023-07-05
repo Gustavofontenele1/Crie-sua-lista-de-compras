@@ -1,6 +1,7 @@
 # Lista de Compras ✏️
 
-<p align="center">Um projeto de uma lista de compras interativa!</p>
+<h2 align="center" style="background-color: yellow; font-size: 24px; padding: 10px;">Um projeto animado de uma lista de tarefas interativa!</h2>
+
 
 <div align="center">
   <img src="assets/img/img projeto.png" alt="Demonstração do Projeto">
