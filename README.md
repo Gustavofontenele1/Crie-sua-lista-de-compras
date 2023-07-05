@@ -16,7 +16,7 @@ Este é um projeto simples de uma lista de tarefas onde os usuários podem adici
 
 ## ⚙️ Funcionalidades
 
-- Adicionar tarefas: Digite o texto da tarefa no campo de entrada e clique no botão "<img src="assets/img/carrinho-de-compras2.gif" style="width:20px; height:20px;" alt="Link para o GitHub Pages" class="animated-link">" para adicionar uma nova tarefa.
+- Adicionar tarefas: Digite o texto da tarefa no campo de entrada e clique no botão "carrinho de compras" para adicionar uma nova tarefa.
 - Concluir tarefas: Clique no círculo à esquerda de uma tarefa para marcá-la como concluída.
 - Remover tarefas: Clique no ícone da lixeira ao lado de uma tarefa para removê-la da lista.
 - Animado: O projeto conta com animações suaves e interações agradáveis para deixar a lista de tarefas mais divertida.
