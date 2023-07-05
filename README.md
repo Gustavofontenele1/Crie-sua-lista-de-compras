@@ -1,6 +1,6 @@
-# Lista de Tarefas ✏️
+# Lista de Compras ✏️
 
-<p align="center">Um projeto de uma lista de tarefas interativa!</p>
+<p align="center">Um projeto de uma lista de compras interativa!</p>
 
 <div align="center">
   <img src="assets/img/img projeto.png" alt="Demonstração do Projeto">
@@ -8,7 +8,7 @@
 
 ## ℹ️ Sobre o Projeto
 
-Este é um projeto simples de uma lista de tarefas onde os usuários podem adicionar, editar e remover tarefas. Além disso, é possível atribuir uma quantidade e um valor a cada tarefa, e o sistema calculará o total dos produtos.
+Este é um projeto simples de uma lista de compras onde os usuários podem adicionar, editar e remover tarefas. Além disso, é possível atribuir uma quantidade e um valor a cada tarefa, e o sistema calculará o total dos produtos.
 
 ## ⚙️ Funcionalidades
 
