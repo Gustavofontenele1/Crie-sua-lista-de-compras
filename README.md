@@ -1,13 +1,13 @@
 # Lista de Tarefas ✏️
 
 <div align="center">
-  <img src="https://gustavofontenele1.github.io/Crie-sua-lista-de-compras/blob/main/assets/logo.png" alt="Logo do Projeto" width="200" height="200">
+  <img src="https://gustavofontenele1.github.io/Crie-sua-lista-de-compras/main/assets/img/logo.png" alt="Logo do Projeto" width="200" height="200">
 </div>
 
 <p align="center">Um projeto de uma lista de tarefas interativa!</p>
 
 <div align="center">
-  <img src="https://github.com/seu-usuario/nome-do-repositorio/blob/main/assets/demo.gif" alt="Demonstração do Projeto">
+  <img src="assets/img/img projeto.png" alt="Demonstração do Projeto">
 </div>
 
 ## ℹ️ Sobre o Projeto
@@ -45,4 +45,4 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ---
 
-Feito com ❤️ por [Seu Nome](https://github.com/seu-usuario)
+Desenvolvido por [Gustavo Fontenele](https://github.com/Gustavofontenele1)
