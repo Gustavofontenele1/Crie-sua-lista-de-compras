@@ -14,6 +14,8 @@ Este é um projeto simples de uma lista de compras onde os usuários podem adici
 ## ⚙️ Funcionalidades
 
 - Adicionar item: Digite o texto do item no campo de entrada e clique no botão "carrinho de compras" para adicionar um novo item.
+- Adicionar quantidade de item: clique no botão de "+" para aumentar a quantidade de item ou "-" para dimunir a quantiade de item.
+- Adicionar o valor do item: clique no campo de entrada ao lado do botão de quantiade e insira o valor do item. 
 - Concluir item: Clique no círculo à esquerda de um item para marcá-lo como concluído.
 - Remover item: Clique no ícone da lixeira ao lado de um item para removê-la da lista.
 - Animado: O projeto conta com animações suaves e interações agradáveis para deixar a lista de compras mais divertida.
