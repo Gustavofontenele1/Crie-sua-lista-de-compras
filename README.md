@@ -27,9 +27,9 @@ Este é um projeto simples de uma lista de compras onde os usuários podem adici
 
 ## 🛠️ Como Executar
 
+ <img src="assets/img/icons8-mercado.gif" style="background: transparent;" alt="Link para o GitHub Pages">
 <a href="https://gustavofontenele1.github.io/Crie-sua-lista-de-compras/" target="_blank" rel="noopener noreferrer">
-  <img src="assets/img/icons8-mercado.gif" style="background: transparent;" alt="Link para o GitHub Pages">
-  <p onclick="window.open('https://gustavofontenele1.github.io/Crie-sua-lista-de-compras/', '_blank')">Clique aqui</p>
+  <p>Clique aqui</p>
 </a>
 
 
